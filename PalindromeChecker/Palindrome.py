@@ -1,13 +1,13 @@
-def PalindromeChecker(OrginalString):
+def PalindromeChecker(OriginalString):
     stringIsPalindrome = "The string is a palindrome."
     stringIsNotPalindrome = "The string is not a palindrome."
     correctedString = ""
     backwardsString = ""
 
-    if OrginalString == " ":
+    if OriginalString == " " or OriginalString == "":
         return stringIsNotPalindrome
 
-    for character in OrginalString:
+    for character in OriginalString:
         if character.isalnum() == True:
             correctedString += character.lower()
 
@@ -28,3 +28,6 @@ print(PalindromeChecker(" ^R&A*cE C. A r")) # The string is a palindrome.
 print(PalindromeChecker("aa1b1335tt5331b1aa")) # The string is a palindrome.
 print(PalindromeChecker("fkwf--fwr3442fwkfewf")) # The string is not a palindrome.
 print(PalindromeChecker("Raeecar")) # The string is not a palindrome.
+print(PalindromeChecker("")) # The string is not a palindrome.
+print(PalindromeChecker(" ")) # The string is not a palindrome.
+
