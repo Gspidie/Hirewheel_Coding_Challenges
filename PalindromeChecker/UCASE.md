@@ -1,5 +1,5 @@
 # Challenge Overview
-Create a program that checks whether a given string is a palindrome.
+Create a program that checks whether a given string is a palindrome for curious users.
 
 * Ignore spaces, punctuation, and capitalization when determining if the string reads the same forward and backward.
 * Handle edge cases, including empty strings and mixed characters.
@@ -28,7 +28,7 @@ Input: "Hello" → The string is not a palindrome.
     * Punctuation
 
 # A | Assemble
-1. Function Definition: def PalindromeChecker(String)
+1. Function Decleration: def PalindromeChecker(String)
 2. Define Output variables: stringIsPalindrome = "The string is a palindrome." and stringIsNotPalindrome = "The string is not a palindrome."
 3. Return false to obvious not Palindromes: e.g. empty strings.
 4. Alter the string: Lower case string. Then loop through each index and remove any spaces/punctuation by determining if character at the index isalnum() == true.
@@ -40,3 +40,7 @@ Input: "Hello" → The string is not a palindrome.
 See Palindrome.py
 
 # E | Examine
+The solution works as I provided strings that were palindromes and strings that were not palindromes, observing that the message outputted was correct. Alternatively, for improvement, I could have included a unittest class to automatically check if a string is a palindrome. Lastly, the solution I came up with for reversing the string seems to work fine and is quite simple.
+
+
+[15 minutes setting up Repository and IDE] [15 minutes using UCASE] [20 minutes coding] [10 minutes testing and pushing to Github]
